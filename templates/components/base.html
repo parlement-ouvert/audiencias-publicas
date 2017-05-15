@@ -37,16 +37,18 @@
     </head>
 
     {% if 'perguntas' in request.path  %}
-    <body class="room-questions-body">
+    <body class="room-questions-body{% if is_edemocracia %} edemocracia{% endif %}">
     {% elif 'sala' in request.path  %}
-    <body class="room-body">
+    <body class="room-body{% if is_edemocracia %} edemocracia{% endif %}">
     {% else %}
-    <body class="{{no_offset_top}}">
+    <body class="{{no_offset_top}}{% if is_edemocracia %} edemocracia{% endif %}">
     {% endif %}
 
     {# Navigation #}
     {% block navigation %}
-      {% include "components/edem-navigation.html" %}
+      {% if is_edemocracia %}
+        {% include "components/edem-navigation.html" %}
+      {% endif %}
       {% include "components/navigation.html" %}
     {% endblock navigation %}
 

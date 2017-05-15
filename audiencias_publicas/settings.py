@@ -85,6 +85,8 @@ QUESTION_MIN_UPVOTES = config('QUESTION_MIN_UPVOTES', default=3, cast=int)
 GOOGLE_ANALYTICS_ID = config('GOOGLE_ANALYTICS_ID', default='')
 OLARK_ID = config('OLARK_ID', default='')
 WEBSERVICE_URL = config('WEBSERVICE_URL', default='')
+BELONGS_TO_EDEMOCRACIA = config('BELONGS_TO_EDEMOCRACIA', default=False,
+                                cast=bool)
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
