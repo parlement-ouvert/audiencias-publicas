@@ -1,4 +1,4 @@
 [submodule "templates/components/edem-navigation"]
 	path = templates/components/edem-navigation
-	url = https://github.com/labhackercd/edem-navigation.git
+	url = https://github.com/parlement-ouvert/edem-navigation.git
 	branch = master
