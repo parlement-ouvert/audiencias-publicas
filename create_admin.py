@@ -51,3 +51,4 @@ if __name__ == '__main__':
     django.setup()
     create_superuser()
     update_sites()
+    create_superuser()
