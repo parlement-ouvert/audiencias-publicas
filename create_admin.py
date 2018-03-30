@@ -50,3 +50,4 @@ def update_sites():
 if __name__ == '__main__':
     django.setup()
     update_sites()
+    create_superuser()
